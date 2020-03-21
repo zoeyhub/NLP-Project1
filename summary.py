@@ -12,8 +12,8 @@ model=Word2Vec.load('new.model')
 
 # 对文章进行分句
 def splitdata(text):
-    text2 = (text.replace("\n", "").replace("。", "*").replace("！", "*")).split("*") #按整句划分
-#    text2 = (text.replace("\n", "").replace("。", "*").replace("，", "*").replace("！", "*")).split("*") #按短句划分
+    text2 = (text.replace("\n", "").replace("。", "*").replace("？", "*").replace("！", "*")).split("*") #按整句划分
+#    text2 = (text.replace("\n", "").replace("。", "*").replace("，", "*").replace("？", "*").replace("！", "*")).split("*") #按短句划分
     text2 = text2[:-1]
     return text2
 
